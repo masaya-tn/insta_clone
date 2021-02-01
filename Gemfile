@@ -28,6 +28,7 @@ gem 'bootstrap'
 gem 'annotate'
 gem 'sorcery'
 gem 'jquery-rails'
+gem 'redis-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
