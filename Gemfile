@@ -29,6 +29,7 @@ gem 'annotate'
 gem 'sorcery'
 gem 'jquery-rails'
 gem 'redis-rails'
+gem 'rails-i18n'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
