@@ -16,10 +16,8 @@
               = icon 'far', 'trash-alt', class: 'fa-lg'
           = link_to edit_post_path(@post), class: 'ml-auto' do
             = icon 'far', 'edit', class: 'fa-lg'
-    hr.m-0
-    
-    .post-comment.p-3
-      form.form-inline.mb-0
-        input type="text" class="form-control input-comment-body" placeholder="コメント"
-        button type="submit" class="btn btn-primary btn-raised"
-          | 投稿
+
+    = render 'comments/comments', comments: @comments
+  hr.m-0
+  .post-comment.p-3
+    = render 'comments/form', post: @post, comment: @comment
