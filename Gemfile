@@ -32,6 +32,7 @@ gem 'redis-rails'
 gem 'rails-i18n'
 gem 'carrierwave'
 gem 'font-awesome-sass'
+gem 'kaminari'
 
 
 # Use ActiveStorage variant
