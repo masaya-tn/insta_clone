@@ -16,7 +16,9 @@
               = icon 'far', 'trash-alt', class: 'fa-lg'
           = link_to edit_post_path(@post), class: 'ml-auto' do
             = icon 'far', 'edit', class: 'fa-lg'
-
+      - if current_user && !current_user.own?(@post)
+        .ml-auto
+          = render 'like_area', post: @post
     = render 'comments/comments', comments: @comments
   hr.m-0
   .post-comment.p-3
