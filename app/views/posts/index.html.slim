@@ -6,7 +6,7 @@
     .col-md-4.col-12
       - if logged_in?
         .profile-box.mb-3
-          
           = current_user.username
-      
-= link_to 'すべて見る', '#'
+
+      = render @random_users 
+      = link_to 'すべて見る', users_path
