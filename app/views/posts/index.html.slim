@@ -1,12 +1,16 @@
 .container
   .row
     .col-md-8.col-12
-      = render @posts
+      - if @posts.present?
+        = render @posts
+      - else
+        .text-center.font-weight-bold
+          | 投稿がありません
       = paginate @posts
     .col-md-4.col-12
       - if logged_in?
         .profile-box.mb-3
-          
           = current_user.username
-      
-= link_to 'すべて見る', '#'
+
+      = render @users 
+      = link_to 'すべて見る', users_path
