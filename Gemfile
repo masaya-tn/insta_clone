@@ -34,6 +34,7 @@ gem 'carrierwave'
 gem 'font-awesome-sass'
 gem 'kaminari'
 gem 'letter_opener_web'
+gem 'config'
 
 
 # Use ActiveStorage variant
